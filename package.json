@@ -1,0 +1,18 @@
+{
+	"name": "app entry",
+	"version": "1.0.0",
+	"description": "Personality Survey",
+	"main": "server/assets/server.js",
+	"scripts": {
+		"test": "cd client && npm run test:run",
+		"build": "tsc -b && cd client && npm run build",
+		"start": "cd server && node server.js",
+		"dev:client": "cd client && npm run dev",
+		"dev:server": "cd server && npm run dev"
+	},
+	
+	"keywords": [],
+	"author": "Nonye Ulasi",
+	"license": "ISC",
+	"type": "module"
+}
