@@ -76,7 +76,7 @@ export default function Layout({}) {
 					<h4>get help</h4>
 					<nav>
 						<ul>
-							<li>contact us</li>
+							<li><NavLink to="/contact">contact us</NavLink></li>
 							<li>privacy & cookies</li>
 							<li><NavLink to="/">home</NavLink></li>
 						</ul>
