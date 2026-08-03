@@ -77,7 +77,7 @@ export default function Layout({}) {
 					<nav>
 						<ul>
 							<li><NavLink to="/contact">contact us</NavLink></li>
-							<li>privacy & cookies</li>
+							<li><NavLink to="/contact">privacy & cookies</NavLink></li>
 							<li><NavLink to="/">home</NavLink></li>
 						</ul>
 					</nav>
@@ -86,9 +86,9 @@ export default function Layout({}) {
 					<h4>advertising</h4>
 					<nav>
 						<ul>
-							<li>advertising</li>
-							<li>afiliates</li>
-							<li>careers</li>
+							<li><NavLink to="/contact">advertising</NavLink></li>
+							<li><NavLink to="/contact">affiliates</NavLink></li>
+							<li><NavLink to="/contact">careers</NavLink></li>
 						</ul>
 					</nav>
 				</section>
