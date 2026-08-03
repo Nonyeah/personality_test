@@ -86,7 +86,7 @@ export default function Layout({}) {
 					<h4>advertising</h4>
 					<nav>
 						<ul>
-							<li><NavLink to="/contact">advertising</NavLink></li>
+							<li><NavLink to="/advertising">advertising</NavLink></li>
 							<li><NavLink to="/contact">affiliates</NavLink></li>
 							<li><NavLink to="/contact">careers</NavLink></li>
 						</ul>

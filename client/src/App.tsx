@@ -14,6 +14,7 @@ import Error404 from "./Routes/Error404";
 import Personality from "./Routes/Personality";
 import SubmitAnswers from "./Routes/Submit-Answers";
 import Contact from "./Routes/Contact";
+import Advertising from "./Routes/Advertising";
 import "./App.css";
 import "./App2.css";
 import type { Answers } from "./index.d.ts";
@@ -64,6 +65,7 @@ function App() {
 				<Route path="/personality" element={<Personality />} />
 				<Route path="*" element={<Error404 />} />
 				<Route path="/contact" element={<Contact />} />
+				<Route path="/advertising" element={<Advertising />} />
 			</Route>
 		</Routes>
 	);
