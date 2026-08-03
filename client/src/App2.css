@@ -23,13 +23,13 @@ html {
 	font-family: Arial, Verdana, Tahoma, sans-serif;
 }
 
-.contact h1{
+.contact h1, .advertising h1 {
 	text-align: center;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	margin: 50px 0;
 }
 
-.contact p{
+.contact p, .advertising p {
 	font-family: Arial, Verdana, Tahoma, sans-serif;
 	text-align: justify;
 	margin: 20px;
