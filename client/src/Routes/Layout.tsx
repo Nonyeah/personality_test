@@ -38,7 +38,7 @@ export default function Layout({}) {
 							</NavLink>
 						</li>
 						<li>
-							<NavLink style={styles} to="/#">
+							<NavLink style={styles} to="/contact">
 								{" "}
 								Contact
 							</NavLink>
