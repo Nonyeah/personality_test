@@ -23,7 +23,7 @@ const answers: Responses[] = [
 	},
 	{	id: 2,
 		label: "Get Help",
-		listItems: ["contact us", "privacy", "cookies", "terms"],
+		listItems: ["contact us", "advertising", "cookies", "terms"],
 	},
 ];
 

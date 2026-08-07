@@ -1,5 +1,6 @@
 import type { Menu } from "..";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function MobileBottomTabMenu({ id, label, listItems }: Menu) {
 	const [showtab, setshowtab] = useState<boolean>(false);
@@ -34,7 +35,13 @@ function MobileBottomTabMenu({ id, label, listItems }: Menu) {
 								</a>
 							</li>
 						) : (
-							<li key={list}>{list}</li>
+							<li key={list}>
+								<NavLink
+									to={`/${list.split(" ")[0].toLowerCase()}`}
+								>
+									{list}
+								</NavLink>
+							</li>
 						)
 					)}
 				</ul>
