@@ -191,16 +191,19 @@ html {
 	margin: 10px;
 }
 .error-route {
-	text-align: center;
+	text-align: justify;
+	margin: 20px 40px;
 }
 
 .error-route h1 {
 	margin: 40px 0;
+	text-align: center;
 }
 
 .error-route p {
 	font-family: arial, Verdana, Tahoma, sans-serif;
-	font-size: 1rem;
+	font-size:1rem;
+	line-height: 180%;
 }
 
 .send-results-container {
@@ -450,6 +453,9 @@ html {
 		font-size: 0.8rem;
 		padding: 10px;
 		margin: 0;
+	}
+	.error-route p{
+		font-size: 0.8rem;
 	}
 }
 

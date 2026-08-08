@@ -111,7 +111,7 @@ body {
 }
 .selection-options {
 	display: flex;
-	
+
 	justify-content: center;
 	flex: 1 1 initial;
 	background-color: #bff7b7;
@@ -122,7 +122,6 @@ body {
 .questions {
 	margin: 70px auto;
 	cursor: pointer;
-	
 }
 
 .answers {
@@ -235,12 +234,12 @@ body {
 .bottom-nav h4 {
 	text-transform: capitalize;
 	font-size: 1rem;
-	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-family: Georgia, "Times New Roman", Times, serif;
 	margin: 1rem 0;
 	text-align: center;
 }
 
-.bottom-nav .social-media{
+.bottom-nav .social-media {
 	text-align: center;
 }
 .bottom-nav img {
@@ -248,7 +247,6 @@ body {
 	height: auto;
 	margin: 20px;
 	display: inline-block;
-	
 }
 
 .bottom-nav img:hover {
@@ -522,8 +520,8 @@ body {
 		font-size: 0.8rem;
 	}
 
-	.bottom-nav .social-media{
-		text-align:center
+	.bottom-nav .social-media {
+		text-align: center;
 	}
 
 	.bottom-nav img {
@@ -531,7 +529,6 @@ body {
 		height: auto;
 		margin: 15px auto;
 		display: block;
-		
 	}
 }
 
@@ -699,8 +696,10 @@ body {
 		list-style-type: none;
 	}
 
+	.mobile-bottom-tab-menu li a {
+		color: #696969;
+	}
 	.mobile-bottom-tab-menu li:hover {
-		color: #220375;
 		font-weight: bold;
 	}
 }
