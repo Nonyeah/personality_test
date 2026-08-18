@@ -75,7 +75,7 @@ app.post(
 			const match = regex.test(email);
 			if (!match) {
 				return res.send(
-					`<p style="text-align:center:font-size:20px;font-family:arial;margin-top:60px">
+					`<p style="text-align:center;font-size:20px;font-family:arial;margin-top:60px;">
 					Please enter a proper email address using valid email characters</p>`
 				);
 			}
@@ -176,11 +176,12 @@ app.post(
     <p>Please click the button below to verify your email address</p>
    <a href="https://personalitytest.website/verify-email?email=${encodeURIComponent(email)}">
     verify email address</a>
+	<p>If the button isn't responsive you can right click on the button and select "Copy Link Address" to copy the verification link and 
+	paste it into your browser.</p>
 	</div>
 	</body>
 	</html>
 	`;
-
 			const mailOptions: MailOptions = {
 				from: process.env.EMAIL_USER,
 				to: email,
@@ -223,7 +224,7 @@ app.get(
 		const match = regex.test(email);
 		if (!match) {
 			return res.send(
-				`<p style="text-align:center;font-size:20px;font-family:arial;margin-top:60px">
+				`<p style="text-align:center;font-size:20px;font-family:arial;margin-top:60px;">
 					       Your email address did not pass our validation checks so we are unable
 						   to send you your character profile results</p>`
 			);
@@ -279,15 +280,21 @@ app.get(
 			}
 
 			.form-container p {
-				font-size: 16px;
+				font-size: 18px;
 				font-family: Arial, Helvetica, sans-serif;
-				line-height: 180%;
+				line-height: 150%;
 			}
 
 			.form-container button {
 				padding: 16px;
 				opacity: 0;
 			}
+				p#spinner {
+				font-size: 50px;
+				}
+				p#form-response {
+				font-size: 18px;
+				}
 		</style>
 		<title>Email Successfully Verified</title>
 	</head>
@@ -295,7 +302,8 @@ app.get(
 	<body>
 		<div class="form-container">
 			<h2>We've successfully verified your email</h2>
-			<p>Please wait whilst we calculate your personality score...</p>
+			<p>Please wait whilst we calculate your personality score</p>
+			<p id="spinner"></p>
 
 			<form>
 				<input type="hidden" id="userEmail" name="email" value="${email}" />
