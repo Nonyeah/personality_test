@@ -355,7 +355,7 @@ body {
 	}
 
 	.mobile-nav span {
-		font-size: 70px;
+		font-size: 60px;
 		cursor: pointer;
 		transform: translateY(-70px);
 		margin-left: 50px;
@@ -413,7 +413,7 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
 	.mobile-nav span {
-		font-size: 70px;
+		font-size: 60px;
 		transform: translateY(-60px);
 		margin-left: 20px;
 	}
@@ -465,7 +465,7 @@ body {
 
 @media only screen and (min-width: 600px) and (max-width: 767px) {
 	.mobile-nav span {
-		font-size: 60px;
+		font-size: 50px;
 		cursor: pointer;
 		transform: translateY(-40px);
 		margin-left: 20px;
@@ -548,7 +548,7 @@ body {
 	}
 
 	.mobile-nav span {
-		font-size: 70px;
+		font-size: 50px;
 		transform: translateY(0);
 		margin-left: 20px;
 		font-size: 60px;
@@ -705,6 +705,11 @@ body {
 }
 
 @media only screen and (min-width: 200px) and (max-width: 598px) {
+
+		.mobile-nav span {
+		font-size: 40px;
+	
+	}
 	.summary-box {
 		display: flex;
 		flex-direction: column;

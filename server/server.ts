@@ -347,6 +347,14 @@ app.post(
 				[email]
 			);
 
+			if (userData[0].resultsent) {
+				return res.send(
+					`<p style="text-align:center;font-size:20px;font-family:arial;margin-top:60px">
+					     You have already received your personality profile. 
+						 Please check your inbox or junk mail.</p>`
+				);
+			}
+
 			//extract user score for calculation
 			const results = JSON.parse(userData[0][0].data);
 			//extract user name

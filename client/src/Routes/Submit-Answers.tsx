@@ -40,7 +40,7 @@ function SubmitAnswers({ serverData }: ServerData) {
 			let message: string = "";
 			try {
 				const response: Response = await fetch(
-					"https://personalitytest.website/survey-response",
+					"/survey-response",
 					{
 						method: "POST",
 						headers: { "content-type": "application/json" },

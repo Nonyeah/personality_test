@@ -23,13 +23,15 @@ html {
 	font-family: Arial, Verdana, Tahoma, sans-serif;
 }
 
-.contact h1, .advertising h1 {
+.contact h1,
+.advertising h1 {
 	text-align: center;
-	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-family: Georgia, "Times New Roman", Times, serif;
 	margin: 50px 0;
 }
 
-.contact p, .advertising p {
+.contact p,
+.advertising p {
 	font-family: Arial, Verdana, Tahoma, sans-serif;
 	text-align: justify;
 	margin: 20px;
@@ -140,13 +142,10 @@ html {
 	text-align: center;
 }
 
-.learn-container .bg-container4 ol {
-	margin: 0;
-	padding: 0;
-}
-
-.learn-container .bg-container4 li {
-	margin: 15px 0;
+.learn-container .bg-container4 ol li {
+	margin: 15px;
+	font-family: arial, Verdana, Tahoma, sans-serif;
+	font-size: 0.85rem;
 }
 
 .learn-container .bg-container2 {
@@ -202,7 +201,7 @@ html {
 
 .error-route p {
 	font-family: arial, Verdana, Tahoma, sans-serif;
-	font-size:1rem;
+	font-size: 1rem;
 	line-height: 180%;
 }
 
@@ -292,12 +291,12 @@ html {
 		color: #fff;
 	}
 
-.learn-container .bg-container1-inner p,
-.learn-container .bg-container3-inner p,
-.learn-container .bg-container2-inner p,
-.learn-container .bg-container4-inner p {
-	margin-top: 25px;
-}
+	.learn-container .bg-container1-inner p,
+	.learn-container .bg-container3-inner p,
+	.learn-container .bg-container2-inner p,
+	.learn-container .bg-container4-inner p {
+		margin-top: 25px;
+	}
 
 	.learn-container .bg-container1-inner h2 {
 		color: #000;
@@ -454,7 +453,12 @@ html {
 		padding: 10px;
 		margin: 0;
 	}
-	.error-route p{
+
+	.learn-container .bg-container4 ol li {
+		margin: 10px;
+		font-size: 0.7rem;
+	}
+	.error-route p {
 		font-size: 0.8rem;
 	}
 }
