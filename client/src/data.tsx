@@ -16,14 +16,23 @@ const answers: Responses[] = [
 	{	id: 0,
 		label: "Connect with us",
 		listItems: [instagram, tiktok, twitter, pinterest],
+		prevState: [{id: 0, clickedTab: false}],
+		closePreviousTab() {
+		}
 	},
 	{   id: 1,
 		label: "About us",
 		listItems: ["About us", "Learn", "Personality Types", "affiliates"],
+		prevState: [{id: 1, clickedTab: false}],
+		closePreviousTab() {
+		}
 	},
 	{	id: 2,
 		label: "Get Help",
 		listItems: ["contact us", "advertising", "cookies", "terms"],
+		prevState: [{id: 2, clickedTab: false}],
+		closePreviousTab() {
+		}
 	},
 ];
 

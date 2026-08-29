@@ -7,8 +7,27 @@ import twitter from "../assets/x.jpg";
 import { bottomMenuItems } from "../data";
 import MobileBottomTabMenu from "../Components/BottomMenuMobileTab";
 import BurgerMenu from "../Components/BurgerMenu";
+import { useState } from "react";
+import type { PreviousState } from "..";
 
 export default function Layout({}) {
+	const [prevState, setPrevState] = useState<PreviousState[]>([
+		{ id: 0, clickedTab: false },
+		{ id: 1, clickedTab: false },
+		{ id: 2, clickedTab: false },
+	]);
+
+	function closePreviousTab(id: number, isCurrentTabOpen: boolean) {
+		const tabChange = bottomMenuItems.map((data) => {
+			if (data.id == id) {
+				return ({ id: id, clickedTab: isCurrentTabOpen });
+			} else {
+				return {...data.prevState[0]};
+			}
+		});
+		setPrevState(tabChange);
+	}
+
 	const styles = { textDecoration: "none", color: "#000" };
 	return (
 		<>
@@ -66,9 +85,15 @@ export default function Layout({}) {
 					<h4>about</h4>
 					<nav>
 						<ul>
-							<li><NavLink to="/about">about us</NavLink></li>
-							<li><NavLink to="/learn">learn</NavLink></li>
-							<li><NavLink to="/personality">personality types</NavLink></li>
+							<li>
+								<NavLink to="/about">about us</NavLink>
+							</li>
+							<li>
+								<NavLink to="/learn">learn</NavLink>
+							</li>
+							<li>
+								<NavLink to="/personality">personality types</NavLink>
+							</li>
 						</ul>
 					</nav>
 				</section>
@@ -76,9 +101,15 @@ export default function Layout({}) {
 					<h4>get help</h4>
 					<nav>
 						<ul>
-							<li><NavLink to="/contact">contact us</NavLink></li>
-							<li><NavLink to="/contact">privacy & cookies</NavLink></li>
-							<li><NavLink to="/">home</NavLink></li>
+							<li>
+								<NavLink to="/contact">contact us</NavLink>
+							</li>
+							<li>
+								<NavLink to="/contact">privacy & cookies</NavLink>
+							</li>
+							<li>
+								<NavLink to="/">home</NavLink>
+							</li>
 						</ul>
 					</nav>
 				</section>
@@ -86,9 +117,15 @@ export default function Layout({}) {
 					<h4>advertising</h4>
 					<nav>
 						<ul>
-							<li><NavLink to="/advertising">advertising</NavLink></li>
-							<li><NavLink to="/contact">affiliates</NavLink></li>
-							<li><NavLink to="/contact">careers</NavLink></li>
+							<li>
+								<NavLink to="/advertising">advertising</NavLink>
+							</li>
+							<li>
+								<NavLink to="/contact">affiliates</NavLink>
+							</li>
+							<li>
+								<NavLink to="/contact">careers</NavLink>
+							</li>
 						</ul>
 					</nav>
 				</section>
@@ -97,10 +134,12 @@ export default function Layout({}) {
 			<div className="mobile-bottom-tab-menu">
 				{bottomMenuItems.map((menuItem) => (
 					<MobileBottomTabMenu
-					    key={menuItem.id}
+						key={menuItem.id}
 						id={menuItem.id}
 						label={menuItem.label}
 						listItems={menuItem.listItems}
+						prevState={prevState}
+						closePreviousTab={closePreviousTab}
 					/>
 				))}
 			</div>

@@ -23,7 +23,7 @@ function BurgerMenu() {
                         <li><NavLink onClick={closeMenu} to="/">home</NavLink></li>
                          <li><NavLink onClick={closeMenu} to="/learn">learn</NavLink></li>
 						 <li><NavLink onClick={closeMenu} to="/personality">personality</NavLink></li>
-                        <li>contact us</li>
+                         <li><NavLink onClick={closeMenu} to="/contact">contact</NavLink></li>
                          <li><NavLink onClick={closeMenu} to="/about">about</NavLink></li>
                         <li><NavLink onClick={closeMenu} to="/page1">take the test</NavLink></li>
                     </ul>
