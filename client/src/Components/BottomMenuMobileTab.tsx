@@ -1,4 +1,4 @@
-import type { Menu } from "..";
+import type { Menu, PreviousState } from "..";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -14,7 +14,14 @@ function MobileBottomTabMenu({
 	function handleShowTab() {
 		setshowtab(!showtab);
 		closePreviousTab(id, !showtab);
+		
+		
 	}
+
+	const match: PreviousState | undefined = prevState.find(data => data.id === id);
+	if(match && showtab && match.clickedTab == false){
+		setshowtab(false);
+	} 
 
 	return (
 		<>
